@@ -1,0 +1,75 @@
+html{
+    background: no-repeat url("../sources/images/contactsbg.webp");
+    background-size: cover;
+    background-attachment: scroll;
+}
+main{
+    padding: 20px 10px 10px 20px;
+    width: 60%;
+    margin: auto;
+    color: white;
+    margin-top: 20px;
+}
+main *{
+    text-align: start;
+}
+main > div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+main > div:not(:last-of-type){
+    margin-bottom: 20px;
+}
+main > div > img{
+    margin-right: 20px;
+}
+main a{
+    display: inline;
+}
+h4{
+    color: #7ac959;
+    font-weight: bold;
+    font-size: 20px;
+}
+.upper_content > h3{
+    text-align: start;
+    font-size: 20px;
+}
+p{
+    font-size: 18px;
+}
+div.upper_content{
+    width: 50%;
+    padding: 15px;
+}
+div.upper_content >*:not(:last-child):not(:first-child){
+    width: 100%;
+    border: unset;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    margin-bottom: 2px;
+    padding: 5px 5px 3px 3px;
+    color: white;
+}
+::placeholder{
+    color: white;
+}
+textarea{
+    height: 100px;
+    resize: none;
+}
+button{
+    background-color: #ffcc00;
+    border: unset;
+    transition-duration: 0.5s;
+    border-radius: 5px;
+    float: right;
+    padding: 3px;
+}
+button:hover{
+    background-color: #33251a;
+    transition-duration: 0.5s;
+}
