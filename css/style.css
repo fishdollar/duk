@@ -3,6 +3,7 @@
     margin: 0;
     font-family: 'Jura', sans-serif;
     text-align: center;
+    word-wrap: break-word;
 }
 html{
     background: no-repeat url("../sources/images/woodenbg.png");
@@ -15,7 +16,7 @@ body{
 }
 header {
     color: white;
-    width: 60%;
+    padding: 0 20%;
     margin: 0 auto;
 }
 p, h4{
@@ -53,7 +54,7 @@ li {
     cursor: pointer;
 }
 
-h1:first-of-type {
+header h1 {
     border: 3px solid #76492b;
     border-radius: 5px;
     padding: 15px;
@@ -162,8 +163,7 @@ div.wrapper {
     margin-bottom: 2%;
 }
 main{
-    width: 60%;
-    margin: auto;
+    margin: 0 20%;
     color: white;
     background-color: #33251A9C;
     border: 3px solid #76492b;
@@ -265,11 +265,39 @@ main.video_gallery > iframe{
     height: 300px;
     margin-top: 50px;
 }
-main.video_gallery > h2{
+main h2{
     width: 100%;
     font-weight: bold;
     font-size: 26pt;
 }
+.shop_container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+    margin-bottom: 15px;
+}
+.shop_container img{
+    max-width: 100%;
+}
+.shop_container p{
+    text-align: left;
+}
 footer{
     height: 120px;
 }
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {  }
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {  }
+
+/* Landscape phones and down */
+@media (max-width: 480px) { 
+    h1,h2,h3,h4,h5,p{
+        font-size: x-small;
+    }
+ }
